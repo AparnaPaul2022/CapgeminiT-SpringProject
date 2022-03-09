@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                           
+   <bean name="bref" class="springprojectoneforsetter.reference.B">
+   <property name="Y" value="30"/>
+   </bean>
+   
+   <bean name="aref" class="springprojectoneforsetter.reference.A">
+   <property name="X" value="60"/>
+   <property name="ob">
+   		<ref bean="bref"/>
+   	</property>
+   </bean>
+</beans>

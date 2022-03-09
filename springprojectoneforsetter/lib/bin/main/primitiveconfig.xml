@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                           
+   <bean name="student1" class="springprojectoneforsetter.primitiv.datatypes.Student">
+     <property name="studentId" value="001"/>
+     <property name="studentName" value="Aparna Paul"/>
+     <property name="studentAddress" value="Kolkata"/>
+     </bean>
+     
+     <bean name="student2" class="springprojectoneforsetter.primitiv.datatypes.Student">
+     <property name="studentId">
+     	<value>002</value>
+     </property>
+     <property name="studentName">
+     	<value>Anjali Kumari</value>
+     </property>
+     <property name="studentAddress">
+     	<value>Pune</value>
+     </property>
+   </bean>
+   
+</beans>
