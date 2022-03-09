@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                           
+<bean name="cer1" class="springproject.two.using.constructor.basicclass.Certificate">
+	<constructor-arg value="Java Programming Language"></constructor-arg>
+</bean>
+                           
+<bean name="person1" class="springproject.two.using.constructor.basicclass.Person">
+	<constructor-arg value="23"/>
+	<constructor-arg value="Nandini Roy"/>
+	<constructor-arg ref="cer1"></constructor-arg>
+</bean>
+
+
+
+<bean name="cer2" class="springproject.two.using.constructor.basicclass.Certificate">
+	<constructor-arg value="Python Programming Language"></constructor-arg>
+</bean>
+                           
+<bean name="person2" class="springproject.two.using.constructor.basicclass.Person">
+	<constructor-arg value="12"/>
+	<constructor-arg value="Ayushi Sharma"/>
+	<constructor-arg ref="cer2"></constructor-arg>
+</bean>
+</beans>
